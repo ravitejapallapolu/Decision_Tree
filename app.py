@@ -1,5 +1,4 @@
 import pickle
-from wsgiref import simple_server
 from flask import Flask, request, app
 from flask import Response
 from flask_cors import CORS
@@ -59,4 +58,3 @@ if __name__ == "__main__":
     app.run(debug=True)
     #httpd = simple_server.make_server(host, port, app)
     # print("Serving on %s %d" % (host, port))
-    #httpd.serve_forever()
